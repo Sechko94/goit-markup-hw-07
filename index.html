@@ -60,7 +60,7 @@
 
         <!--============================================ MOBILE-MENU========================================== -->
 
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" js-open-menu>
           <svg class="mobile-menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger" ></use>
           </svg>
@@ -68,13 +68,69 @@
       </div>
 
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" js-menu-container>
         <div class="container mobile-menu-container">
-          <button type="button" class="modal-btn-close-mobile">
+          <button type="button" class="modal-btn-close-mobile" js-close-menu>
             <svg class="icon-modal-close-mobile" width="8" height="8" >
               <use href="./images/icons.svg#icon-modalclose"></use>
             </svg>
           </button>
+        
+          <ul class="site-nav-mobile">
+            <li class="site-nav-link-mobile">
+              <a href="./index.html" class="link-mobile current">Studio</a>
+            </li>
+            <li class="site-nav-link-mobile">
+              <a href="./portfolio.html" class="link-mobile">Portfolio</a>
+            </li>
+            <li class="site-nav-link-mobile"><a href="" class="link-mobile">Contacts</a></li>
+          </ul>
+        
+
+        <ul class="auth-nav-mobile">
+          <li class="auth-nav-link-mobile">
+            <a class="auth-nav-link-item-mobile " href="tel:+110001111111"
+              >+11 000 111-11-11</a
+            >
+          </li>
+          <li class="auth-nav-link-mobile">
+            <a class="auth-nav-link-item-mobile" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-networks-list-mobile">
+          <li class="social-network-item-mobile">
+            <a class="social-network-link-mobile" href="">
+              <svg class="social-network-icon">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="social-network-item-mobile">
+            <a class="social-network-link-mobile" href="">
+              <svg class="social-network-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-network-item-mobile">
+            <a class="social-network-link-mobile" href="">
+              <svg class="social-network-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-network-item-mobile">
+            <a class="social-network-link-mobile" href="">
+              <svg class="social-network-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
 
         </div>
       
@@ -573,5 +629,6 @@
     </div>
 
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
