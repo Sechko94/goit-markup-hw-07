@@ -347,7 +347,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopleoffice.jpg);
+      url(../images/bg-mobile-1x.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
     background-repeat: no-repeat;
@@ -355,10 +355,16 @@ span {
     background-size: cover;
     text-align: center;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
-  screen and (min-resolution: 192dpi) and (max-width:767px),
-  screen and (min-resolution: 2dppx) and (max-width:767px) {
-
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-mobile-2x.jpg);
+    }
   }
   .hero-title {
     max-width: 319px;
@@ -375,35 +381,314 @@ span {
   }
 
   .hero-button {
-  min-width: 169px;
-  font-family: "Roboto", sans-serif;
-  background-color: var(--accent-color);
-  color: var(--first-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 4px;
-  padding: 16px 32px;
+    min-width: 169px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--accent-color);
+    color: var(--first-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0;
+    outline: none;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* ====================================HERO-TITLE-TABLET =================================================*/
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tablet-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mobile-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--first-background-color);
+  }
+
+  .hero-button {
+    min-width: 169px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--accent-color);
+    color: var(--first-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0;
+    outline: none;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* =============================================HERO-TITLE-DESKTOP=============================================== */
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-desktop-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--first-background-color);
+  }
+
+  .hero-button {
+    min-width: 169px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--accent-color);
+    color: var(--first-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0;
+    outline: none;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--hover-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* ========================================Main============================================== */
+
+/* ======================================ADVANTAGES FOR ALL============================================ */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
   border: 0;
-  outline: none;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* =====================================ADVANTAGES FOR MOBILE AND TABLET====================================== */
 
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (max-width: 1199px) {
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .wrap-svg {
+    display: none;
+  }
+
+  .feature-list h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+  }
+
+  .text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
 }
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--hover-button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} 
+/* =====================================ADVANTAGES FOR MOBILE ====================================== */
 
-
+@media screen and (max-width: 767px) {
+  .feature-list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .feature-list h3 {
+    text-align: center;
+  }
 }
+
+/* =====================================ADVANTAGES FOR TABLET====================================== */
+
+@media screen and (min-width: 768px) {
+  .feature-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .feature-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+/* =====================================ADVANTAGES FOR DESKTOP====================================== */
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .wrap-svg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .text {
+    margin-top: 8px;
+  }
+  .feature-list h3 {
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .feature-list .text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+  }
+}
+
+/* =====================================OFFER FOR MOBILE AND TABLET====================================== */
+
+@media screen and (max-width: 1199px) {
+  .offer {
+    display: none;
+  }
+}
+
+/* =====================================OFFER FOR DESKTOP====================================== */
 
 /* SITE-NAV */
 /* .header-nav {
@@ -537,7 +822,7 @@ span {
 /* Main */
 /* ADVANTAGES */
 
-.feature-list {
+/* .feature-list {
   display: flex;
   gap: 24px;
 }
@@ -596,9 +881,111 @@ span {
   margin-top: 72px;
 }
 
-/* ====================================================TEAM========================================== */
+/* ====================================================TEAM FOR ALL========================================== */
 
 .team {
+  background-color: var(--second-background-color);
+}
+
+.social-networks-list {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+
+
+/* ====================================================TEAM========================================== */
+img {
+  display: block; 
+  width: 100%; 
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+
+
+  .list-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 72px;
+    
+  }
+  .list-team-item {
+  background-color: var(--first-background-color);
+  margin: 0 auto;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-title {
+  margin-bottom: 72px;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.name {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.profession {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.social-networks-list {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-network-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  background: var(--accent-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-network-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--first-background-color);
+}
+.social-network-link:hover,
+.social-network-link:focus {
+  background-color: var(--hover-button-color);
+} 
+
+/* .team {
   background-color: var(--second-background-color);
 }
 .list-team {
@@ -670,7 +1057,7 @@ span {
 .social-network-link:hover,
 .social-network-link:focus {
   background-color: var(--hover-button-color);
-}
+} */
 
 /* ==================================CUSTOMERS=================================== */
 
