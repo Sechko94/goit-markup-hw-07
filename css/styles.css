@@ -109,7 +109,6 @@ span {
     left: 0;
     width: 100vw;
     height: 100vh;
-    max-height: 796px;
     z-index: 999;
     overflow-y: scroll;
     padding-top: 80px;
@@ -195,7 +194,7 @@ span {
   }
 
   .auth-nav-link-mobile .current {
-    color: var(--accent-color);
+    color: var(--accent-colorя);
   }
   .auth-nav-link-item-mobile:hover,
   .auth-nav-link-item-mobile:focus {
@@ -512,6 +511,7 @@ span {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    /* max-width: 1440px; */
     padding-top: 190px;
     padding-bottom: 190px;
     background-image: linear-gradient(
@@ -537,6 +537,8 @@ span {
       url(../images/bg-desktop-2x.jpg);
   }
 }
+
+
 
 @media screen and (min-width: 1200px) {
   .hero-title {
