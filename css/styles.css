@@ -104,6 +104,8 @@ span {
   } */
 
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -181,20 +183,18 @@ span {
   .site-nav-link-mobile:not(:last-child) {
     margin-bottom: 40px;
   }
-  .site-nav-link-mobile:last-child {
-    margin-bottom: 284px;
-  }
-
+ 
   .site-nav-link-mobile .current {
     color: var(--accent-color);
   }
 
   .auth-nav-mobile {
+    margin-top: auto;
     margin-bottom: 48px;
   }
 
   .auth-nav-link-mobile .current {
-    color: var(--accent-colorя);
+    color: var(--accent-color);
   }
   .auth-nav-link-item-mobile:hover,
   .auth-nav-link-item-mobile:focus {
@@ -458,7 +458,7 @@ span {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-mobile-2x.jpg);
+      url(../images/bg-tablet-2x.jpg);
   }
 }
 
@@ -511,7 +511,8 @@ span {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    /* max-width: 1440px; */
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 190px;
     padding-bottom: 190px;
     background-image: linear-gradient(
@@ -921,6 +922,7 @@ span {
 
 .team {
   background-color: var(--second-background-color);
+  
 }
 
 .social-networks-list {
@@ -1087,6 +1089,12 @@ img {
 }
 
 /* ==========================================TEAM FOR DESKTOP================================= */
+@media screen and (min-width: 1200px) {
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+}
 
 .list-team {
   display: flex;
