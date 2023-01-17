@@ -186,8 +186,16 @@ span {
     margin-bottom: 284px;
   }
 
+  .site-nav-link-mobile .current {
+    color: var(--accent-color);
+  }
+
   .auth-nav-mobile {
     margin-bottom: 48px;
+  }
+
+  .auth-nav-link-mobile .current {
+    color: var(--accent-color);
   }
   .auth-nav-link-item-mobile:hover,
   .auth-nav-link-item-mobile:focus {
@@ -217,9 +225,8 @@ span {
 
   .social-networks-list-mobile {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 56px;
+    justify-content: flex-start;
+    gap: 40px;
   }
 
   .social-network-link-mobile {
