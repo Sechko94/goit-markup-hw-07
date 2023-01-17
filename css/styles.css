@@ -252,9 +252,9 @@ span {
     padding-top: 24px;
     padding-bottom: 24px;
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 
     transition-property: color;
@@ -1262,7 +1262,7 @@ img {
   }
 }
 
-/* ===============================================FOOTER====================================================== */
+/* ===============================================FOOTER FOR ALL====================================================== */
 .footer {
   background-color: var(--secondary-text-color);
 }
@@ -1276,6 +1276,7 @@ img {
 }
 
 .tagline {
+  width: 264px;
   color: var(--footer-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -1323,18 +1324,14 @@ img {
   fill: var(--first-background-color);
 }
 
-@media screen and (max-width: 767px) and (max-width: 1199px) {
+/* ===============================================FOOTER FOR MOBILE============================================ */
+
+@media screen and (max-width: 767px) {
   .footer {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-}
 
-/* ===============================================FOOTER FOR MOBILE============================================ */
-
-@media screen and (max-width: 767px) {
-
-  
   .footer-logo {
     display: block;
     margin-bottom: 16px;
@@ -1343,7 +1340,6 @@ img {
 
   .tagline {
     max-width: 270px;
-    height: 172px;
     margin: auto;
     text-align: start;
   }
@@ -1364,23 +1360,97 @@ img {
 
   .footer-social-media-link {
     display: flex;
-   
+  }
+}
+
+/*============================================= FOOTER FORM========================================================== */
+
+@media screen and (max-width: 767px) {
+  .wrapper-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-form-title {
+    text-align: center;
+  }
+
+  .footer-email-field {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+/* ==========================================FOOTER FOR TABLET============================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    width: 565px;
+  }
+
+  .footer-tagline {
+    width: 264px;
+  }
+
+  .wrapper-sub {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-email-field {
+    width: 264px;
+  }
+}
+
+/* =============================================FOOTER_FOR DESKTOP================================================= */
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+  }
+  .container-footer {
+    display: flex;
+  }
+
+  .footer-tagline {
+    margin-right: 120px;
+  }
+
+  .footer-social-media {
+    margin-right: 80px;
+  }
+
+  .wrapper-sub {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-email-field {
+    width: 264px;
   }
 
 }
-
-/* .container-footer {
-  display: flex;
-}
+/* 
 .footer-tagline {
   margin-right: 120px;
 }
 
 .footer {
   background-color: var(--secondary-text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin: 0 auto;
+  
 }
 
 .footer-logo {
@@ -1416,7 +1486,7 @@ img {
 
  */
 
-/*========================================== FOOTER FORM================================ */
+/*========================================== FOOTER FORM FOR ALL================================ */
 
 .footer-form-title {
   margin-bottom: 16px;
@@ -1429,15 +1499,15 @@ img {
   color: var(--first-background-color);
 }
 
-.wrapper-sub {
+/* .wrapper-sub {
   display: flex;
-}
+} */
 
 .footer-email-field {
-  width: 264px;
+  /* width: 264px; */
   height: 40px;
-  margin-right: 24px;
-  padding-left: 16px;
+  /* margin-right: 24px; */
+  /* padding-left: 16px; */
 
   color: var(--footer-text-color);
   background-color: var(--secondary-text-color);
@@ -1467,6 +1537,7 @@ img {
 
 .subscribe-btn {
   min-width: 164px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
