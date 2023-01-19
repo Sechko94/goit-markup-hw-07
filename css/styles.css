@@ -934,8 +934,6 @@ span {
   gap: 24px;
 }
 
-.name {
-}
 
 /* ====================================================TEAM========================================== */
 img {
@@ -1183,8 +1181,7 @@ img {
     row-gap: 72px;
   }
 
-  .client-list-item {
-  }
+  
   .client-link {
     display: flex;
     align-items: center;
@@ -1950,9 +1947,4 @@ img {
 
 /* =========================MODAL FOR TABLET====================================== */
 
-@media screen and (min-width:768px ) {
 
-  .modal {
-
-  }
-}
