@@ -1948,3 +1948,17 @@ img {
 /* =========================MODAL FOR TABLET====================================== */
 
 
+.wrapper-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background-color: #84A178;
+  
+}
+
+.about-img {
+  
+}
